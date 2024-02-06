@@ -4,6 +4,7 @@
   <!-- Vendors -->
   <include>uAvionix.xml</include>
   <include>icarous.xml</include>
+  <include>planckAero.xml</include>
   <include>loweheiser.xml</include>
   <include>cubepilot.xml</include>
   <dialect>2</dialect>
@@ -1096,6 +1097,7 @@
       <entry value="25" name="COPTER_MODE_SYSTEMID"/>
       <entry value="26" name="COPTER_MODE_AUTOROTATE"/>
       <entry value="27" name="COPTER_MODE_AUTO_RTL"/>
+      <entry value="28" name="COPTER_MODE_TURTLE"/>
     </enum>
     <enum name="SUB_MODE">
       <description>A mapping of sub flight modes for custom_mode field of heartbeat.</description>
@@ -1291,6 +1293,7 @@
       <field type="float" name="zgyro" units="rad/s">Angular speed around Z axis.</field>
       <field type="int32_t" name="lat" units="degE7">Latitude.</field>
       <field type="int32_t" name="lng" units="degE7">Longitude.</field>
+      <field type="int32_t" name="alt_msl" units="mm">Altitude in millimeters</field>
     </message>
     <message id="165" name="HWSTATUS">
       <description>Status of key hardware.</description>
